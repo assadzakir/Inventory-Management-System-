@@ -56,22 +56,22 @@ class Stock extends Component {
 
         return (
             <Table>
-                <TableHeader>
+                <TableHeader displaySelectAll={false}>
                     <TableRow>
                         <TableHeaderColumn>Product</TableHeaderColumn>
                         <TableHeaderColumn>Store</TableHeaderColumn>
                         <TableHeaderColumn>Quantity</TableHeaderColumn>
-                        <TableHeaderColumn>Price</TableHeaderColumn>
+                        {/*<TableHeaderColumn>Price</TableHeaderColumn>*/}
                     </TableRow>
                 </TableHeader>
-                <TableBody >
+                <TableBody  displayRowCheckbox={false} showRowHover={true} stripedRows={true}>
                     {
                         this.props.stock.isloaded ? this.showUsersList(this.props.stock.stockList).map((stock,id) =>
                                 <TableRow key={id}>
                                     <TableRowColumn>{stock.product}</TableRowColumn>
                                     <TableRowColumn>{stock.store}</TableRowColumn>
                                     <TableRowColumn>{stock.quantity}</TableRowColumn>
-                                    <TableRowColumn>{stock.price}</TableRowColumn>
+                                    {/*<TableRowColumn>{stock.price}</TableRowColumn>*/}
                                 </TableRow>
                             ) : ''
                     }

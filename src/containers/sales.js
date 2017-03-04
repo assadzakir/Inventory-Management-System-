@@ -53,7 +53,7 @@ render() {
 
     return (
         <Table>
-            <TableHeader>
+            <TableHeader displaySelectAll={false}>
                 <TableRow>
                     <TableHeaderColumn>Product</TableHeaderColumn>
                     <TableHeaderColumn>Store</TableHeaderColumn>
@@ -61,7 +61,7 @@ render() {
                     <TableHeaderColumn>Price</TableHeaderColumn>
                 </TableRow>
             </TableHeader>
-            <TableBody >
+            <TableBody  displayRowCheckbox={false} stripedRows={true}>
                 {
                     this.props.sales.isloaded ? this.showUsersList(this.props.sales.salesList).map((sales,id) =>
                                 <TableRow key={id}>

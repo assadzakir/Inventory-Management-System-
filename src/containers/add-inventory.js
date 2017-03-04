@@ -314,7 +314,7 @@ class addReport extends Component {
                                     />
                                     <DatePicker
                                         hintText="Date"
-                                        value={this.state ? this.state.date:"Date"}
+                                        value={this.state ? this.state.date:new Date()}
                                         onChange={(event, date) => {
                                             this.setState({
                                                 date: date,
@@ -384,7 +384,7 @@ class addReport extends Component {
                                     />
                                     <DatePicker
                                         hintText="Date"
-                                        value={this.state ? this.state.date:"Date"}
+                                        value={this.state ? this.state.date:new Date()}
                                         onChange={(event, date) => {
                                             this.setState({
                                                 date: date,
