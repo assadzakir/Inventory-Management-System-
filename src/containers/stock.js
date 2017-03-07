@@ -61,7 +61,7 @@ class Stock extends Component {
                         <TableHeaderColumn>Product</TableHeaderColumn>
                         <TableHeaderColumn>Store</TableHeaderColumn>
                         <TableHeaderColumn>Quantity</TableHeaderColumn>
-                        {/*<TableHeaderColumn>Price</TableHeaderColumn>*/}
+                        <TableHeaderColumn>Price</TableHeaderColumn>
                     </TableRow>
                 </TableHeader>
                 <TableBody  displayRowCheckbox={false} showRowHover={true} stripedRows={true}>
@@ -71,7 +71,7 @@ class Stock extends Component {
                                     <TableRowColumn>{stock.product}</TableRowColumn>
                                     <TableRowColumn>{stock.store}</TableRowColumn>
                                     <TableRowColumn>{stock.quantity}</TableRowColumn>
-                                    {/*<TableRowColumn>{stock.price}</TableRowColumn>*/}
+                                    <TableRowColumn>{stock.price}</TableRowColumn>
                                 </TableRow>
                             ) : ''
                     }

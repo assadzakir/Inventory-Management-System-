@@ -6,7 +6,6 @@ import React, { Component } from 'react';
 import Paper from 'material-ui/Paper'
 import RaisedButton from 'material-ui/RaisedButton'
 import TextField from 'material-ui/TextField'
-import style from './signin.scss';
 const buttonStyle = { width: '100%' };
 const fieldStyle = { width: '80%' };
 import {Tabs, Tab} from 'material-ui/Tabs';

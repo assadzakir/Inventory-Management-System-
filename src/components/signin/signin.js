@@ -4,9 +4,8 @@
 import React, { Component, PropTypes } from 'react'
 import RaisedButton from 'material-ui/RaisedButton'
 import TextField from 'material-ui/TextField'
-import style from './signin.scss';
 const buttonStyle = { width: '100%' };
-const fieldStyle = { width: '80%' }
+const fieldStyle = { width: '80%' };
 
 export default class signinForm extends Component {
 
@@ -39,7 +38,7 @@ export default class signinForm extends Component {
         }
 
         return (
-            <form style={{ padding: '16px', margin: '0px' }} className='LoginForm' onSubmit={handleSubmit}>
+            <form style={{padding: '16px', margin: '0px' }} className='LoginForm' onSubmit={handleSubmit}>
                 <TextField
                     floatingLabelText='Email'
                     name="email"
